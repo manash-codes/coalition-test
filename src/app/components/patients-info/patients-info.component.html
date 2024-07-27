@@ -1,1 +1,45 @@
-<p>patients-info works!</p>
+<div class="m-6 mt-[18px] ms-8 p-4 bg-white rounded-2xl w-[367px] min-h-[740px]">
+    <div class="flex flex-col items-center">
+        <img class="w-[200px] h-[200px]" src={{patient?.profile_picture}} alt="">
+        <p class="text-2xl font-extrabold pt-6">{{patient?.name}}</p>
+        <div class="self-start text-[14px] mt-8 flex flex-col gap-6">
+            <div class="flex gap-2">
+                <img src="../../../assets/icons/patients-info/BirthIcon.svg" alt="">
+                <div class="flex flex-col">
+                    <p class="font-medium">Date of Birth</p>
+                    <p class="font-bold">{{patient?.date_of_birth}}</p>
+                </div>
+            </div>
+            <div class="flex gap-2">
+                <img src="../../../assets/icons/patients-info/FemaleIcon.svg" alt="">
+                <div class="flex flex-col">
+                    <p class="font-medium">Gender</p>
+                    <p class="font-bold">{{patient?.gender}}</p>
+                </div>
+            </div>
+            <div class="flex gap-2">
+                <img src="../../../assets/icons/patients-info/PhoneIcon.svg" alt="">
+                <div class="flex flex-col">
+                    <p class="font-medium">Contact Info</p>
+                    <p class="font-bold">{{patient?.phone_number}}</p>
+                </div>
+            </div>
+            <div class="flex gap-2">
+                <img src="../../../assets/icons/patients-info/PhoneIcon.svg" alt="">
+                <div class="flex flex-col">
+                    <p class="font-medium">Emergency Contact</p>
+                    <p class="font-bold">{{patient?.emergency_contact}}</p>
+                </div>
+            </div>
+            <div class="flex gap-2">
+                <img src="../../../assets/icons/patients-info/InsuranceIcon.svg" alt="">
+                <div class="flex flex-col">
+                    <p class="font-medium">Insurance Provider</p>
+                    <p class="font-bold">{{patient?.insurance_type}}</p>
+                </div>
+            </div>
+        </div>
+        <button class="bg-[#01f0d0] rounded-[40px] mt-10 py-3 px-10 font-bold tracking-tight">Show All
+            Information</button>
+    </div>
+</div>
