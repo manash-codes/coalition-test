@@ -42,7 +42,7 @@ jobs:
         run: npm run build:prod
       # {7}
       - name: Build Angular app to Prod
-        uses: manash-codes/github-pages-deploy-action@release/v3
+        uses: manash-codes/coalition-test@release/v3
         with:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           BASE_BRANCH: main
