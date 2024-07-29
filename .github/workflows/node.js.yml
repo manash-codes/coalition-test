@@ -24,7 +24,11 @@ jobs:
       - name: Build Angular project
         run: npm run build -- --output-path=dist --base-href="/coalition-test/"
 
-      - name: Deploy to GitHub Pages
-        run: npx angular-cli-ghpages --dir=dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Build Angular app to Prod
+        uses: manash-codes/coalition-test@release/v3
+        with:
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BASE_BRANCH: main
+          BRANCH: prod
+          FOLDER: dist/browser  
+
