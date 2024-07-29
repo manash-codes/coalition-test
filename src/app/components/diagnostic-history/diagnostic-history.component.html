@@ -1,7 +1,34 @@
 <div class="my-8 bg-white rounded-2xl p-[20px]">
     <p class="text-xl font-extrabold tracking-tight mb-[20px]">Diagnostic History</p>
-    <div class="w-[726px] h-[298px] bg-slate-500 mb-[20px] rounded-xl">
-
+    <div class="w-[736px] min-h-[298px] mb-[20px] rounded-xl bg-[#f4f0fe] p-4">
+        <div class="flex justify-between">
+            <div class="w-3/4">
+                <div class="flex justify-between items-baseline pb-6">
+                    <p class="font-bold text-lg">Blood Pressure</p>
+                    <p class="me-8">Last 6 Months <span>
+                            <img class="inline ps-2"
+                                src="../../../assets/icons/expand_more_FILL0_wght300_GRAD0_opsz24.svg" alt="">
+                        </span>
+                    </p>
+                </div>
+                <canvas #mychart></canvas>
+            </div>
+            <div class="w-1/4">
+                <p class="font-bold py-1"><span
+                        class="inline-block text-center rounded-full w-[14px] h-[14px] bg-[#E66FD2]"></span>
+                    Systolic</p>
+                <p class="font-bold text-xl pt-1">160</p>
+                <p class="py-2"> <img class="inline pe-1" src="../../../assets/icons/ArrowUp.svg" alt="">Higher than
+                    Average</p>
+                <div class="w-full ps-2 bg-slate-300 h-[1px]"></div>
+                <p class="font-bold py-2"><span
+                        class="inline-block text-center rounded-full w-[14px] h-[14px] bg-[#8C6FE6]"></span>
+                    Diastolic</p>
+                <p class="font-bold text-xl">78</p>
+                <p class="py-1"><img class="inline pe-1" src="../../../assets/icons/ArrowDown.svg" alt=""> Lower than
+                    Average</p>
+            </div>
+        </div>
     </div>
     <div class="flex gap-5">
         <div class="bg-sky-100 p-4 rounded-[12px] w-[228px]">
