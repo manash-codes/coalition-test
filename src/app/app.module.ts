@@ -7,6 +7,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { PatientsListComponent } from './components/patients-list/patients-list.component';
 import { DiagnosticHistoryComponent } from './components/diagnostic-history/diagnostic-history.component';
 import { PatientsInfoComponent } from './components/patients-info/patients-info.component';
+import { DiagnosticListComponent } from './components/diagnostic-list/diagnostic-list.component';
+import { LabResultsComponent } from './components/lab-results/lab-results.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { PatientsInfoComponent } from './components/patients-info/patients-info.
     NavbarComponent,
     PatientsListComponent,
     DiagnosticHistoryComponent,
-    PatientsInfoComponent
+    PatientsInfoComponent,
+    DiagnosticListComponent,
+    LabResultsComponent
   ],
   imports: [
     BrowserModule,
