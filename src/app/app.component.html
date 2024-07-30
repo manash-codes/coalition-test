@@ -2,7 +2,13 @@
   <app-navbar></app-navbar>
   <div class="flex justify-between">
     <app-patients-list></app-patients-list>
-    <app-diagnostic-history></app-diagnostic-history>
-    <app-patients-info></app-patients-info>
+    <div class="flex flex-col">
+      <app-diagnostic-history></app-diagnostic-history>
+      <app-diagnostic-list></app-diagnostic-list>
+    </div>
+    <div class="flex flex-col">
+      <app-patients-info></app-patients-info>
+      <app-lab-results></app-lab-results>
+    </div>
   </div>
 </main>
