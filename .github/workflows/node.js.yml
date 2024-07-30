@@ -22,5 +22,5 @@ jobs:
         run: npm install
 
       - name: Build Angular project
-        run: npm run build -- --output-path=dist --base-href="/coalition-test/"
+        run: npm run build -- --output-path=docs --base-href="/coalition-test/"
 
