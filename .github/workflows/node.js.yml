@@ -24,7 +24,3 @@ jobs:
       - name: Build Angular project
         run: npm run build -- --output-path=dist --base-href="/coalition-test/"
 
-      - name: Deploy to GitHub Pages
-        run: npx angular-cli-ghpages --dir=dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
