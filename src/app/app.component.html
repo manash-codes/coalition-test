@@ -1,13 +1,13 @@
 <main class="bg-slate-100 h-screen w-screen overflow-x-hidden">
   <app-navbar></app-navbar>
   <div class="flex justify-between">
-    <app-patients-list></app-patients-list>
+    <app-patients-list [patients]="patientDetails"></app-patients-list>
     <div class="flex flex-col">
       <app-diagnostic-history></app-diagnostic-history>
       <app-diagnostic-list></app-diagnostic-list>
     </div>
     <div class="flex flex-col">
-      <app-patients-info></app-patients-info>
+      <app-patients-info [patient]="patientDetails[3]"></app-patients-info>
       <app-lab-results></app-lab-results>
     </div>
   </div>
